@@ -1,3 +1,6 @@
+[docker-plugin-ver]: v3.12.0
+
+
 # Docker Buildkite Plugin [![Build status](https://badge.buildkite.com/b813517b8bb70d455106a03fbfbb1986477deb7c68f9ffcf59.svg?branch=master)](https://buildkite.com/buildkite/plugins-docker)
 
 A [Buildkite plugin](https://buildkite.com/docs/agent/v3/plugins) for running pipeline steps in [Docker](https://www.docker.com/) containers.
@@ -13,7 +16,7 @@ steps:
   - command: "go build -o dist/my-app ."
     artifact_paths: "./dist/my-app"
     plugins:
-      - docker#v3.12.0:
+      - docker#[docker-plugin-ver]:
           image: "golang:1.11"
 ```
 
